@@ -22,10 +22,11 @@ def on_trackbarTwo(val):
 cv.namedWindow('Edge Detection')
 maxTrackTitle = 'Max Threshold'
 minTrackTitle = 'Min Threshold'
-cv.createTrackbar(maxTrackTitle, 'Edge Detection', 0, 500, on_trackbar)
-cv.createTrackbar(minTrackTitle, 'Edge Detection', 0, 500, on_trackbarTwo)
+cv.createTrackbar(maxTrackTitle, "Edge Detection", 0, 500, on_trackbar)
+cv.createTrackbar(minTrackTitle, "Edge Detection", 0, 500, on_trackbarTwo)
 
 on_trackbar(maxVal)
 on_trackbarTwo(minVal)
 
 cv.waitKey()
+cv.imwrite("output.jpg", edges)

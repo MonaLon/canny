@@ -1,7 +1,5 @@
 import numpy as np
 import cv2 as cv
-import matplotlib.pyplot as plt
-from matplotlib.widgets import Slider
 
 img = cv.imread('what.PNG', 0)
 fig = plt.figure()

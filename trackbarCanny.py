@@ -2,7 +2,6 @@ import numpy as np
 import cv2 as cv
 
 img = cv.imread('what.PNG', 0)
-fig = plt.figure()
 minVal = 100
 maxVal = 200
 
